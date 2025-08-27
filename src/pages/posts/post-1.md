@@ -25,3 +25,9 @@ Welcome to ET Webblog about Astro, gods and ET! Here, I will share my learning j
 ## What's next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+
+<ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/posts/post-2/">Post-2</a></li>
+      <li><a href="/posts/post-3/">Post-3</a></li>
+    </ul>

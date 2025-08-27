@@ -9,3 +9,9 @@ pubDate: 2022-07-08
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 After a successful first week learning Astro, I decided to try some more. I wrote and imported a small component from memory!
+
+<ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/posts/post-2/">Post-1</a></li>
+      <li><a href="/posts/post-3/">Post-3</a></li>
+    </ul>
