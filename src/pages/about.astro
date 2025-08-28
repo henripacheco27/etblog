@@ -1,5 +1,13 @@
 ---
 const pageTitle = "About me";
+
+const identity = {
+  firstName: "Varginha",
+  country: "Brazil",
+  occupation: "Blogger",
+  hobbies: ["amigo de humano", "blogueiro", "influenciador digital"],
+}
+const skills = ["et", "varginha", "gente boa"]
 ---
 <html lang="en">
   <head>
@@ -14,13 +22,27 @@ const pageTitle = "About me";
     <a href="/blog/">Blog</a>
     
     <h1>{pageTitle}</h1>
-    <h2>... and my new Astro site!</h2>
+    <h2>Meu novo site!</h2>
 
-    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
+    <p>Estou trabalhando para você ser meu amigo</p>
 
-    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    <p>Este site foi feito por um humano gente boa que decidiu nos ajudar!</p>
+
+    <p>Alguns fatos sobre mim:</p>
+<ul>
+  <li>Meu nome é: {identity.firstName}.</li>
+  <li>Eu moro no {identity.country} e trabalho como {identity.occupation}.</li>
+  {identity.hobbies.length >= 2 &&
+    <li>2 dos meus hobbies são: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+  }
+</ul>
+<p>Minhas habilidades:</p>
+<ul>
+  {skills.map((skill) => <li>{skill}</li>)}
+</ul>
 
       <a href="/">Volta meu chapa</a>
 
   </body>
 </html>
+
