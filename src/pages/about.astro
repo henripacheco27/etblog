@@ -1,5 +1,8 @@
 ---
 import Footer from "./components/Footer.astro";
+import Social from "./components/Social.astro";
+import Header from "./components/Header.astro";
+
 const pageTitle = "About me";
 
 const identity = {
@@ -17,6 +20,7 @@ const skillColor = "navy";
 ---
 <html lang="en">
   <head>
+    <Header />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
@@ -63,7 +67,11 @@ const skillColor = "navy";
 {goal === 3 ? <p>Minha está no terceiro dia.</p> : <p>Talvez antes de 3 dias.</p>}
 
       <a href="/">Volta meu chapa</a>
-</footer>
+    <Footer />
+    <footer>
+      <p>Cola aqui embaixo e vamos trocar umas ideias meu chapa.</p>
+      <Social platform="Reddit" username="hp27"/>
+    </footer>
   </body>
 </html>
 
