@@ -1,12 +1,16 @@
 ---
-const pageTitle = "Central";
-
 import Footer from "./components/Footer.astro";
 import Header from "./components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const pageTitle = "Home Page";
 ---
 
 <html lang="en">
   <Header />
+  <BaseLayout>
+    <h2>My awesome blog subtitle</h2>
+  </BaseLayout>
 
   <head>
     <meta charset="utf-8" />
@@ -23,6 +27,9 @@ import Header from "./components/Header.astro";
       <li><a href="/posts/post-2/">Post-2</a></li>
       <li><a href="/posts/post-3/">Post-3</a></li>
       <Footer />
+      <script>
+      import "../scripts/menu.js";
+    </script>
     </ul>
   </body>
 </html>
